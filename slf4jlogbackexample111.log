@@ -1,0 +1,12 @@
+09.02.2023 01:43:03.958 [main] INFO   Main - Just a log message.
+09.02.2023 01:43:03.961 [main] DEBUG  Main - Message for debug level.
+09.02.2023 01:43:03.965 [main] ERROR  Main - Failed to read file /file/does/not/exist.
+java.nio.file.NoSuchFileException: \file\does\not\exist
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at Main.main(Main.java:15)
